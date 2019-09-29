@@ -90,3 +90,23 @@ btn.onclick = function() {
     counter ++;
     cont.innerHTML += `<p>${counter} Hello User</p>`
 }*/
+
+var users = ['vasa', 'pitya', 'an'];
+
+//var newUsers = users.map(function(i){
+  //console.log(i);
+  //return `<li>${i}</li>`;
+//});
+var users = [{name: 'vasa', age:25},{name: 'pitya', age:29},{name: 'an', age:33}];
+var filteredUsers = users.filter((i) =>{
+if(i.age > 30) {
+  return true;
+} 
+return false;
+})
+
+
+console.log(filteredUsers);
+
+
+
